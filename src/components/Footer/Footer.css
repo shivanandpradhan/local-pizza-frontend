@@ -1,0 +1,108 @@
+
+footer{
+    margin-top : 3vmax;
+    padding : 3vmax;
+    background: rgb(34, 33, 33);
+    color : white;
+    display: flex;
+    align-items: center;
+}
+.container {
+    display: flex;
+    width: 100%;
+}
+.left-footer {
+    width: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 1vmax;
+}
+.left-footer > h3 {
+    color: white;
+    font-size: 2vmax;
+    margin-bottom: 0.5vmax;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.left-footer > p{
+    font-size: 1.4vmax;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.726);
+}
+.left-footer > img {
+    width: 11vmax;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.middle-footer {
+    width:  60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.middle-footer > .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-footer > .title-container > h1 > img{
+    object-fit: fill;
+    width: 4vmax;
+    height: 3vmax;
+}
+.middle-footer > .title-container > h1{
+    font-size: 3.5vmax;
+    font-family: cursive;
+    color: crimson;
+}
+
+.middle-footer > h4 {
+    font-size: 1.4vmax;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.middle-footer > p {
+    font-size: 1.6vmax;
+    margin-top: 2vmax;
+    color: rgba(255, 255, 255, 0.692);
+}
+.right-footer {
+    width: 20%;
+    text-align: center;
+    margin: auto 0;
+}
+.socio-links {
+    display: flex;
+    flex-direction: column
+}
+.right-footer > h2{
+    font-size: 1.8vmax;
+    margin-bottom: 1vmax;
+    font-family: Arial, Helvetica;
+    color: white;
+}
+.socio-links > a{
+    font-size: 1.5vmax;
+    text-decoration: none;
+    color: rgb(201, 192, 179);
+    transition: all 0.3s;
+}
+.socio-links > a:hover {
+    color: rgb(228, 55, 205);
+}
+
+@media screen and (max-width : 600px) {
+    .right-footer > h2 {
+        font-size: 2.5vmax;
+    }
+    .socia-links > a{
+        font-size : 2vmax;
+    }
+}
+
+@media  screen and (max-width : 400px) {
+   
+}

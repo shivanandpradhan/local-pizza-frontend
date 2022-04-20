@@ -1,0 +1,270 @@
+.modalBackground {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(200, 200, 200, 0.24);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 12;
+}
+.modalContainer {
+    width: 50%;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 2vmax;
+}
+.modalContainer > .error-message{
+    color: red;
+    font-size: 1.4vmax;
+    margin: 1vmax 0;
+}
+
+.modalContainer > .titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.modalContainer > .titleCloseBtn > button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5vmax;
+    cursor: pointer;
+  }
+
+.modalContainer-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.modalContainer-card > .modalContainer-card-image{
+    width: 40%;
+}
+.modalContainer-card  > .modalContainer-card-image > img{
+    width: 100%;
+    height: 14vmax;
+    object-fit: fill;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}  
+.modalContainer-card > .body {
+    width: 60%;
+}
+.modalContainer-card > .body >.title > h1 {
+    font-size: 1.7vmax;
+    text-align: center;
+}
+.modalContainer-card > .body > p{
+    font-size: 1.3vmax;
+    padding: 1vmax 0.4vmax;
+}
+.modalContainer-card > .body > .product-rating{
+    display: flex;
+    justify-content: space-around;
+}
+.modalContainer-card > .body > .product-rating > .rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modalContainer-card > .body > .product-rating > .rating > span{
+    font-weight: 600;
+    font-size: 1.2vmax;
+    color: tomato;
+}
+.modalContainer-card > .body > .product-rating > .price{
+    margin: auto 0;
+}
+.modalContainer-card > .body > .product-rating > .price > p{
+    color: black;
+    font-size: 1.3vmax;
+    font-weight: 600;
+}
+.modalContainer-card > .body > .product-rating > .price > p >.span{
+    font-size: 1.1vmax;
+}
+
+.modalContainer-card > .body > .select-size{
+    padding: 1.5vmax 0;
+    display: flex;
+    justify-content: space-between
+}
+.modalContainer-card > .body > .select-size > p{
+    width: 35%;    
+    font-size: 1.3vmax;
+    margin: auto 0;
+}
+.modalContainer-card > .body > .select-size > .basic-multi-select{
+    width: 65%;
+    font-size: 1vmax;
+}
+.modalContainer-card > .body > .select-toppings {
+    display: flex;
+    justify-content: space-around;   
+}
+.modalContainer-card > .body > .select-toppings > p{
+    width: 35%;
+    font-size: 1.2vmax;
+    margin: auto 0;
+}
+.modalContainer-card > .body > .select-toppings > .basic-multi-select{
+    width: 65%;
+    font-size: 1vmax;
+}
+.modalContainer-card > .body > .quantity-items-container{
+    padding: 1vmax 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.modalContainer-card > .body > .quantity-items-container > p{
+    font-size: 1.2vmax;
+}
+.modalContainer-card > .body > .quantity-items-container > .buttons{
+    display: flex;
+    align-items: center;
+}
+.modalContainer-card > .body > .quantity-items-container > .buttons > h2{
+    font-size: 1.2vmax;
+    padding : 5px 2vmax;
+}
+.modalContainer-card > .body > .quantity-items-container > .buttons > .incr-button{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 5px 2vmax;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.modalContainer-card > .body > .quantity-items-container > .buttons > .decr-button{
+   border: none;
+   padding: 5px 2vmax;
+   background-color: rgba(255, 99, 71, 0.842);
+   color: white;
+   font-weight: 600;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: all 0.5s;
+}
+.modalContainer-card > .body > .quantity-items-container > .buttons > .incr-button:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.modalContainer-card > .body > .quantity-items-container > .buttons > .decr-button:hover{
+    background-color: tomato;
+}
+
+.modalContainer .footer {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.modalContainer .footer button {
+    padding: 0.75vmax 2.5vmax;
+    margin: 10px;
+    border: none;
+    background-color: white;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    border-radius: 8px;
+    font-size: 1.3vmax;
+    cursor: pointer;
+    transition: all 0.4s;
+} 
+.modalContainer .footer button:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+#cancelBtn {
+    border: 1px solid crimson;
+    color: crimson;
+    background-color: white;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+#cancelBtn:hover{
+    background-color: crimson;
+    color: white;
+}
+@media screen and (max-width : 750px) {
+    .modalContainer > .error-message{
+        font-size: 1.8vmax;
+    }
+    .modalContainer-card{
+        flex-direction: column;
+    }
+    .modalContainer-card > .modalContainer-card-image{
+        width: 75%;
+    }
+    .modalContainer-card  > .modalContainer-card-image > img{
+        height: 19vmax;
+    }
+    .modalContainer-card > .body >.title > h1{
+        font-size: 2.3vmax;
+    }
+    .modalContainer-card > .body > p{
+        font-size: 1.8vmax;
+    }
+    .modalContainer-card > .body > .product-rating > .rating > span{
+        font-size: 1.8vmax;
+    }
+    .modalContainer-card > .body > .product-rating > .price > p{
+        font-size: 1.8vmax;
+    }
+    .modalContainer-card > .body > .select-size > p{
+        font-size: 1.6vmax;
+    }
+    .modalContainer-card > .body > .select-size > .basic-multi-select{
+        font-size: 1.3vmax;
+    }
+    .modalContainer-card > .body > .select-toppings > p{
+        font-size: 1.6vmax;
+    }
+    .modalContainer-card > .body > .select-toppings > .basic-multi-select{
+        font-size: 1.3vmax;
+    }    
+    .modalContainer-card > .body > .quantity-items-container > p{
+        font-size: 1.6vmax;
+    }
+    .modalContainer-card > .body > .quantity-items-container > .buttons > h2{
+        font-size: 1.7vmax;
+    }
+    .modalContainer-card > .body > .quantity-items-container > .buttons > .incr-button{
+        padding-left: 2.3vmax;
+        padding-right: 2.3vmax;
+        font-size: 1.6vmax;
+    }
+    .modalContainer-card > .body > .quantity-items-container > .buttons > .decr-button{
+        padding-left: 2.3vmax;
+        padding-right: 2.3vmax;
+        font-size: 1.6vmax;
+    }
+    .modalContainer .footer button{
+        font-size: 1.7vmax;
+    }
+}
+@media screen and (max-width : 600px) {
+    .modalContainer{
+        width: 70%;
+    }
+    .modalContainer-card > .body > .product-rating{
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5vmax;
+    }
+    .modalContainer-card > .body >.title > h1{
+        font-size: 2.5vmax;
+        padding-top: 1vmax;
+    }
+    .modalContainer .footer button{
+        padding: 1vmax 2.8vmax;
+    }
+}

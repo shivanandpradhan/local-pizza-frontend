@@ -1,0 +1,117 @@
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+nav > .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+nav > .overlay > .overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay-content > .left-navbar-item-container {
+  display: flex;
+  color: crimson;
+  align-items: center;
+  justify-content: center;
+}
+.overlay-content > .left-navbar-item-container > h1 {
+  font-size: 5vmax;
+  font-family: cursive;
+}
+.overlay-content > .left-navbar-item-container > h1 > img {
+  width: 6vmax;
+  height: 4vmax;
+  object-fit: fill;
+}
+
+.overlay-content > .middle-navbar-item-container > ul {
+  padding: 3vmax;
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+}
+.overlay-content > .middle-navbar-item-container > ul > li {
+  list-style: none;
+}
+.overlay-content > .middle-navbar-item-container > ul > li > a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.842);
+  font-size: 2.8vmax;
+}
+.overlay-content > .right-navbar-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5vmax;
+}
+.overlay-content > .right-navbar-item-container > .cart-icon-container{
+  padding: 0 2vmax;
+}
+.overlay-content > .right-navbar-item-container > .cart-icon-container > div{
+  position: relative;
+}
+.overlay-content > .right-navbar-item-container > .cart-icon-container > div > a{
+  color: crimson;
+}
+.overlay-content > .right-navbar-item-container > .cart-icon-container > div > a > p{
+  color: white;
+  font-size: 2.5vmax;
+  font-weight: 600;
+  padding: 1.2vmax;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(128, 128, 128, 0.384);
+}
+.overlay-content > .right-navbar-item-container > div > button {
+  padding: 1.4vmax 2.6vmax;
+  border: none;
+  border-style: none;
+  border-radius: 5px;
+  background-color: crimson;
+  color: white;
+  font-size: 2.2vmax;
+  font-family: "Roboto";
+  font-weight: 500;
+  transition: all 0.5s;
+}
+.overlay-content > .right-navbar-item-container > div > .btn-login {
+  background-color: tomato;
+  color: white;
+}
+.overlay-content > .right-navbar-item-container > div > .btn-login:hover {
+  color: tomato;
+  background-color: white;
+}
+.overlay-content > .right-navbar-item-container > div > .btn-signup:hover {
+  background: white;
+  color: crimson;
+}
+.overlay .closebtn {
+  color: white;
+  font-size: 6vmax;
+  position: absolute;
+  top: 20px;
+  right: 45px;
+}
+
+nav > span {
+  color : rgba(220, 20, 60, 0.705);
+  position: absolute;
+  margin: 1vmax 2.5vmax;
+}

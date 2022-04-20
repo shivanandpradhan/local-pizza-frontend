@@ -1,0 +1,125 @@
+.products-container{
+    padding: 4vmax 2vmax;
+    text-align: center;
+}
+.products-heading{
+    padding-bottom: 2vmax;
+    text-align: center;
+    width: 20vmax;
+    border-bottom: 1px solid rgba(0,0,0,0.171);
+    margin : 0 auto;
+    font: 500 2vmax "Roboto";
+    color: black;
+}
+.filterbox-products-container{
+    background-color: rgba(226, 198, 106, 0.384);
+    padding: 0.5vmax;
+    margin : 1vmax auto;
+    border: 1px solid rgba(80, 77, 77, 0.39);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.329) 0px 3px 8px;
+}
+.filterbox-products-container > .filter-box{
+    display: flex;
+    gap : 1vmax;
+    align-items: center;
+}
+.filterbox-products-container > .filter-box >.filter-buttons > button{
+    border: 1px solid grey;
+    padding: 5px 1vmax;
+    font-size: 1vmax;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.filterbox-products-container > .filter-box > h3{
+    font-size: 1.5vmax;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.863);
+    margin: auto 0;
+}
+
+.filterbox-products-container > .filter-box >.filter-buttons > button:first-child{
+  border-top-left-radius: 0.5vmax;
+  border-bottom-left-radius: 0.5vmax;
+}
+.filterbox-products-container > .filter-box >.filter-buttons > button:first-child:hover{
+    background-color: green;
+    color: white;
+}
+.filterbox-products-container > .filter-box >.filter-buttons > button:last-child:hover{
+    background-color: crimson;
+    color: white;
+}
+
+.filterbox-products-container > .filter-box >.filter-buttons >  button:last-child{
+    border-top-right-radius: 0.5vmax;
+    border-bottom-right-radius: 0.5vmax;
+}
+.filterbox-products-container > .sort-box{
+    display: flex;
+    gap: 1vmax;
+    align-items: center;
+}
+.filterbox-products-container > .sort-box > h3{
+    font-size: 1.5vmax;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.801);
+    margin: auto 0;
+}
+.filterbox-products-container > .sort-box >.sort-buttons > button{
+    border: 1px solid rgba(255, 99, 71, 0.486);
+    padding: 5px 1vmax;
+    font-size: 1vmax;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.filterbox-products-container > .sort-box >.sort-buttons > button:hover{
+    background-color: rgba(255, 99, 71, 0.541);
+    color: white;
+}
+.filterbox-products-container > .sort-box >.sort-buttons > button:first-child{
+    border-top-left-radius: 0.5vmax;
+    border-bottom-left-radius: 0.5vmax;
+}
+.filterbox-products-container > .sort-box >.sort-buttons > button:last-child{
+    border-top-right-radius: 0.5vmax;
+    border-bottom-right-radius: 0.5vmax;
+}
+.products{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media screen and (max-width : 600px) {
+    .products-container{
+        margin : 0 auto;
+    }
+    .products-heading{
+        font-size: 3vmax;
+    }
+    .filterbox-products-container > .filter-box > h3{
+        font-size: 1.8vmax;
+    }
+    .filterbox-products-container > .filter-box > .filter-buttons > button{
+        font-size: 1.2vmax;
+    }
+    .filterbox-products-container > .sort-box > .sort-buttons > button {
+        font-size: 1.2vmax;
+    }
+}   
+@media screen and (max-width : 300px){
+    .filterbox-products-container{
+        flex-direction: column;
+        padding: 1vmax;
+    }
+    .filterbox-products-container > .filter-box{
+        padding: 1vmax 0;
+    }
+}
